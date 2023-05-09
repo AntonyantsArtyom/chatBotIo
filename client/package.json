@@ -1,0 +1,22 @@
+{
+   "name": "chatbotio",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "dev": "next dev"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC",
+   "dependencies": {
+      "axios": "^1.4.0",
+      "framer-motion": "^10.11.6",
+      "mobx": "^6.9.0",
+      "mobx-react-lite": "^3.4.3",
+      "next": "^13.2.4",
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "uuid": "^9.0.0"
+   }
+}

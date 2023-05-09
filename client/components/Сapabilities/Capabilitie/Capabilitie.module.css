@@ -1,0 +1,73 @@
+.capabilitie {
+   display: grid;
+   width: 250px;
+   height: 290px;
+
+   grid-template-rows:
+      max-content
+      5px
+      max-content
+      5px
+      1fr;
+   grid-template-areas:
+      "image"
+      "....."
+      "head "
+      "....."
+      "text";
+}
+.image {
+   grid-area: image;
+}
+.head {
+   position: relative;
+   left: -1px;
+   grid-area: head;
+   white-space: pre-line;
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 24px;
+   color: #ffffff;
+}
+.text {
+   grid-area: text;
+   white-space: pre-line;
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 16px;
+   color: #9c9ce6;
+   opacity: 0.5;
+}
+@media (max-width: 1000px) {
+   .head {
+      left: -2px;
+   }
+   .text {
+      position: relative;
+      left: -1px;
+   }
+}
+@media (max-width: 750px) {
+   .capabilitie {
+      width: 620px;
+      height: 100px;
+      display: grid;
+      grid-template-columns: 100px 15px 1fr;
+      grid-template-rows: 50px 5px 50px;
+      grid-template-areas:
+         "image ... head"
+         "image ... text";
+   }
+   .head {
+      position: relative;
+      top: -2px;
+   }
+   .text {
+      position: relative;
+      top: -2px;
+   }
+}

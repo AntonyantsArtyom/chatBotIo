@@ -1,0 +1,47 @@
+.statusBlock {
+   height: 70px;
+   display: grid;
+   grid-template-columns: 22px 10px max-content;
+   grid-template-areas: "sign ... text";
+   align-items: center;
+}
+.statusBlock > h3 {
+   white-space: pre-line;
+   grid-area: text;
+   font-family: "Montserrat";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+}
+.statusBlock > p {
+   grid-area: sign;
+   font-family: "Inter";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 29px;
+}
+.statusBlock > img {
+   background: none;
+   grid-area: sign;
+}
+
+.statusBlock[status="finish"] > p {
+   color: #2fca21;
+}
+.statusBlock[status="finish"] > h3 {
+   color: #2fca21;
+}
+.statusBlock[status="inProcess"] > p {
+   color: #ffc444;
+}
+.statusBlock[status="inProcess"] > h3 {
+   color: #ffc444;
+}
+.statusBlock[status="error"] > p {
+   color: #ff2f2f;
+}
+.statusBlock[status="error"] > h3 {
+   color: #ff2f2f;
+}
